@@ -1,3 +1,17 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.tiltowait.dev/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'do as sudo'
+theme = 'bear'
+
+[params]
+  title = 'do as sudo'
+  description = 'thoughts, dev notes, and musings during a freebsd migration'
+
+  hideMadeWithLine = true
+  enablePostNavigator = true
+
+[[menu.main]]
+  name = 'home'
+  url = '/'
+  weight = 1
+
