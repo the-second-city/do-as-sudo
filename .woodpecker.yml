@@ -11,7 +11,7 @@ steps:
     commands:
       - rm -rf "$BUILD_DIR"/*
       - rm -rf "$BUILD_DIR"/.[!.]* 2>/dev/null || true
-      - git clone "$CI_REPO_CLONE_URL" .
+      - git clone --recurse-submodules "$CI_REPO_CLONE_URL" .
       - cp -r . "$BUILD_DIR/"
 
   - name: redeploy
