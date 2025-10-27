@@ -6,6 +6,7 @@ theme = 'bear'
 [params]
   title = 'do as sudo'
   description = 'thoughts, dev notes, and musings during a freebsd migration'
+  favicon = 'images/favicon.png'
 
   hideMadeWithLine = true
   enablePostNavigator = true
