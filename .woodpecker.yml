@@ -9,8 +9,10 @@ steps:
     environment:
       BUILD_DIR: /mnt/build-artifacts/blog
     commands:
-      - rm -rf "$BUILD_DIR"
-      - git clone "$CI_REPO_CLONE_URL" "$BUILD_DIR"
+      - rm -rf "$BUILD_DIR"/*
+      - rm -rf "$BUILD_DIR"/.[!.]* 2>/dev/null || true
+      - git clone "$CI_REPO_CLONE_URL" .
+      - cp -r . "$BUILD_DIR/"
 
   - name: redeploy
     image: sh
