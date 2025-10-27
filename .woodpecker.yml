@@ -1,0 +1,18 @@
+skip_clone: true
+when:
+  - branch: master
+    event: push
+
+steps:
+  - name: clone to build-artifacts
+    image: sh
+    environment:
+      BUILD_DIR: /mnt/build-artifacts/blog
+    commands:
+      - rm -rf "$BUILD_DIR"
+      - git clone "$CI_REPO_CLONE_URL" "$BUILD_DIR"
+
+  - name: redeploy
+    image: sh
+    commands:
+      - ssh blog
