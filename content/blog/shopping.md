@@ -79,6 +79,8 @@ A (reluctant) pass.
 
 We’re running out of providers! Most VPS hosts only offer Linux, and I kept coming up empty-handed until I found [Cloudzy](https://cloudzy.com). Finally! Two dedicated vCPUs and 4GB RAM for only $15/mo. I’d have liked more RAM, but <pick your idiom about beggars and choosers, ports and storms, etc.>. I signed up.
 
+![Cloudzy looked promising ...](/images/cloudzy.png)
+
 And immediately hit obstacles. SSH kept disconnecting after about 30 seconds. Some staccato troubleshooting later, I discovered the kernel saw only 30MB of RAM, only 13MB was free, and there was no swap partition.
 
 (I’d love to show you a screenshot of the issues, but I don’t want to undo my fixes and endure yet more 30-second connections, so use your imagination.)
