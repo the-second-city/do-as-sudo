@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'do as sudo'
 theme = 'bear'
 
+[permalinks]
+  blog = "/:slug"
+  tags = "/blog/:slug"
+
 [params]
   title = 'do as sudo'
   description = 'thoughts, dev notes, and musings during a freebsd migration'
