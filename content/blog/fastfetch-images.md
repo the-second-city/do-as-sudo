@@ -35,4 +35,6 @@ libMagickCore-7.Q16.so    libMagickCore-7.so.10
 libMagickWand-7.Q16.so    libMagickWand-7.so.10
 ```
 
+![FastFetch with an image logo](/images/fastfetch.png)
+
 Voila!
