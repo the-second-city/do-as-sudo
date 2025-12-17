@@ -303,7 +303,8 @@ You’ll need to enter your PIN, after which you should see something like:
 
 ```
 gpg: using "404AD0B0E4FCD703E8F9D71592C1DE4CCFF11D6A" as default secret key for signing
-gpg: Signature made Tue Dec 16 22:43:07 2025 PST                                                   gpg:                using EDDSA key C5BFE4F90D15B0201419198B94F99E254DC38D77
+gpg: Signature made Tue Dec 16 22:43:07 2025 PST
+gpg: using EDDSA key C5BFE4F90D15B0201419198B94F99E254DC38D77
 gpg: Good signature from "tiltowait (yk-25519) <noreply@tiltowait.dev>" [ultimate]
 ```
 
