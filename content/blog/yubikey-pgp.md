@@ -12,7 +12,7 @@ tags = []
 
 If you have a Yubikey, reading [Yubico’s PGP documentation](https://support.yubico.com/s/article/Using-Your-YubiKey-with-OpenPGP) is an excellent way to drive yourself up a wall.
 
-The docs have several problems, from not explaining things to confusing phrasing to not following best practices to *being just flat-out wrong*. Make no mistake: **if you follow their documentation to the letter, your setup will not work properly.** So, in the hopes it spares at least *one* person the pain I just underwent, I’ve written this post.
+The docs have several problems, from not explaining things to confusing phrasing to not following best practices to *being just flat-out wrong*. Make no mistake: **if you follow their documentation to the letter, your setup will not work properly.** So, in the hopes it spares at least *one* person the pain I just endured, I’ve written this post.
 
 ## Versions
 
