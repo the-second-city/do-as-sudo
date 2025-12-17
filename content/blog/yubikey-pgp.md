@@ -353,7 +353,7 @@ Now, if you run `gpg --card-status` again, the `sec` line will say `sec#`. The `
 
 If you’ve followed this to the end, you should have a working PGP setup on your Yubikey, plus a backup of your primary and public keys. Keep the public key. Store the private key in a safe. Go full paranoid and print it on paper[^small-keys].
 
-Have fun signing.
+Happy signing.
 
 [^key-type]: Yubico blanket recommends RSA and RSA. RSA is *fine*. It works, but it’s a 1970s scheme vs a 2010s scheme. Ed25519 is usually faster, more secure (though neither is quantum-safe), and produces smaller keys (yes, this can matter).
 
