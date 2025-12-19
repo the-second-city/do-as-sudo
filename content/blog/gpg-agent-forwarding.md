@@ -107,7 +107,7 @@ Remote into your **server** and run the following:
 echo hi | gpg --clearsign
 ```
 
-If all goes well, you will be prompted for your PIN. After authenticating, you should receive the signed message:
+If you've done everything correctly, you will be prompted for your PIN. After authenticating, you should receive the signed message:
 
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
