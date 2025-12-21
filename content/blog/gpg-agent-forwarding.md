@@ -66,7 +66,7 @@ If you haven't done it already, you’ll also need to set the `GPG_TTY` variable
 set -x GPG_TTY (tty)
 ```
 
-**On the remote server**, you need to tell the GPG agent not to start and also kill it if it’s currently running. Edit `~/.gnupg/gpg-agent.conf` and add the line:
+**On the remote server**, you need to tell the GPG agent not to start and also kill it if it’s currently running. Edit `~/.gnupg/gpg.conf` and add the line:
 
 ```
 no-autostart
