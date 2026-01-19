@@ -125,11 +125,11 @@ vS/2chEjgESofLPMD6syp8p3cIlBEAo=
 
 ## Thoughts
 
-I’m happy both with how this experiment went and with how relatively straightforward it went. I’ve omitted some debugging and errors I encountered, but I was expecting much more frustration than I got. That’s a win.
+I’m happy with both this experiment's outcome and with how relatively straightforward it was. I’ve omitted some debugging and errors I encountered, but I expected much more frustration than I got. That’s a win.
 
 One unavoidable aspect of agent forwarding is the time penalty: where signing on the remote server was instant, now it takes several seconds. This is a natural consequence of all the extra work being done: your data is shuttled over the SSH connection, signed locally, and then the signature is sent back to the remote. For now, I consider this an acceptable compromise. We’ll see how I feel in a month.
 
-[^partial-mitigation]: A hardware key is only a partial mitigation. While it’s true that the key can't be stolen from your key, an attacker might still be able to sign as you while you’re connected. Whether they can depends on both your PIN settings and how strong your muscle memory to just type your PIN every time the dialog pops up is.
+[^partial-mitigation]: A hardware key is only a partial mitigation. While it’s true that the (software) key can't be stolen from your (hardware) key, an attacker might still be able to sign as you while you’re connected. Whether they can depends on both your PIN settings and how strong your muscle memory to just type your PIN every time the dialog pops up is.
 
 [^jumping]: Apologies for jumping back and forth between local and remote, but there's a bit of a chicken-and-egg problem. You're also getting the instructions more or less in the order I figured them out.
 

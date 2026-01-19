@@ -45,7 +45,7 @@ $6$.OVfJthZYlbyV7QI$3lG7RxT/434Os4xngOKV4/Gel6.pv.xRaeAw74rASBW.FR/WoAaicWWmnTNm
 A fair bit of data is packed into this string:
 
 * `$6$`: This identifies the hash method used. More on this later.
-* `.OVfJthZYlbyV7QI`: This is our [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)). (Dramatically) simplifying things, it’s a random value inserted into our real password so that the hash is unique no matter what our password is. This protects against [rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table), which are tables of precomputed hashes.
+* `.OVfJthZYlbyV7QI`: This is our [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)). (Massively) simplifying things, it’s a random value inserted into our real password so that the hash is unique no matter what our password is. This protects against [rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table), which are tables of precomputed hashes.
 * `$3lG7RxT/434Os4xngOKV4/Gel6.pv.xRaeAw74rASBW.FR/WoAaicWWmnTNm2S7rDVQTVCgLVaILS24cxvLjQ.`: This (minus the leading `$`) is our hash.
 
 When you attempt to authenticate, the system looks up your user and grabs the hash. It then extracts the salt and method number and passes them along with your input to `crypt(3)`. If the resulting hash is the same as the stored hash, you’re in.
@@ -81,7 +81,7 @@ $2b$04$l.5CqTYDV1kiQ1aRQYx.uu3gLhSVoTRtSbC7e3Bm0N7l30KzDCsxm
 
 Ideally, we’d want at least a cost factor of 12. Each addition of two to the cost quarters the speed at which we can hash. At cost factor 12, we’re down to ~4.4 hashes/sec. At 14, we only manage one per second. Past that leads to silly territory[^why-not].
 
-The problem? Nothing in the manpage, nor my searches online, surface any way to set the cost factor. We’re stuck at `04`. Might as well use the default.
+The problem? Nothing in the manpage, nor my searches online, surface any way to set the cost factor. We’re stuck at `04`. Might as well use SHA-512.
 
 ## But what if we force the matter?
 
